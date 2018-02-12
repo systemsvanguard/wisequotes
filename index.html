@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8">
+    <title>Wise Quotations</title><!-- version 2.07 -->
+    <meta name="description" content="A filterable list of wise quotations app made with Angular.js v 1.6.6.">
+    <meta name="author" content="Ryan Hunter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+	<link href="https://fonts.googleapis.com/css?family=Acme|Mukta+Malar" rel="stylesheet">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="wisequotes/wisequotes.css">
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/angularjs/1.6/angular.min.js"></script>
+</head>
+
+
+<body ng-app="app" ng-controller="appCtrl as ctrl">
+  <div class="container">
+    <br>
+	<div class="filters">
+      <div>
+        <a ng-click="resetFilter()" class="filter-reset">Filter by Categories</a><br>
+      </div>
+	  
+      <div>
+		<select name="filter" id="filter" ng-model="filter" ng-options="color for color in quoteGroups"></select>
+      </div>
+
+    </div><!-- filters -->
+	<br>
+    <div class="list">
+	  <p class="car" ng-repeat="quote in quotes | filter: filter"><span class='numlist'>{{$index+1}} </span>   {{quote.myquote}} ~ {{quote.mysource}}  | {{quote.categ}} </p>
+    </div>
+  </div><!--/ container -->	
+
+
+
+  
+  
+    <!-- JS files -->
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/widgets.js"></script>
+	<script src="wisequotes/wisequotes.js"></script>
+</body>
+</html>
+
