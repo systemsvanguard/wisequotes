@@ -1,6 +1,6 @@
 # Wise Quotes
 
-Quotations from some of te world's leading thinkers. Quotations to make you think. Built using **Angular.js**, HTML5, CSS, JavaScript, and FontAwesone icons. Filter the categories to find the quotations that interest you most. 
+Quotations from some of the world's leading thinkers. Quotations to make you think. Built using **Angular.js**, HTML5, CSS, JavaScript, and FontAwesone icons. Filter the categories to find the quotations that interest you most. 
 
 ![Wise Quotes](http://ryanhunter.org/portfolio/wisequotes/images/wisequotes.png)
 
